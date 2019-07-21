@@ -12,14 +12,14 @@ class EventForm extends Component {
 
   handleFormSubmit = evt => {
     evt.preventDefault();
-    console.log(this.state);
-  };
+    this.props.createEvent(this.state);
+  }
 
   handleInputChange = ({target: {name, value}}) => {
     this.setState({
       [name]: value
     });
-  };
+  }
 
   render() {
     const { cancelFormOpen } = this.props;
