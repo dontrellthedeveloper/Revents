@@ -7,12 +7,11 @@ class App extends Component {
   render() {
     return (
       <Fragment>
-      <NavBar />
-      <Container className="main">
-
-        <EventDashboard />
-     </Container>
-     </Fragment>
+        <NavBar />
+        <Container className="main">
+          <EventDashboard />
+        </Container>
+      </Fragment>
     );
   }
 }

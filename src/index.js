@@ -7,7 +7,7 @@ import * as serviceWorker from './serviceWorker';
 const rootEl = document.getElementById('root');
 
 let render = () => {
-    ReactDOM.render(<App/>, rootEl)
+    ReactDOM.render( < App / > , rootEl)
 }
 
 if (module.hot) {
