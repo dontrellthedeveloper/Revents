@@ -112,6 +112,7 @@ class EventDashboard extends Component {
           />
           {isOpen && (
             <EventForm
+            key={selectedEvent ? selectedEvent.id : 0}
               selectedEvent={selectedEvent}
               cancelFormOpen={this.handleIsOpenToggle}
               createEvent={this.handleFormCancel}
